@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_noborders"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="91dp"
+        android:src="@drawable/don_sang" />
+
+    <TextView
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/country_market"
+        android:paddingTop="8dp"
+        android:text="Donate Blood"
+        android:textColor="#E72F3E"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/berlin_sans_fb"
+        android:text="  Save Lives"
+        android:textColor="#CACACA"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/baseline_alternate_email_24"
+        android:drawablePadding="5dp"
+        android:drawableTint="#CACACA"
+        android:fontFamily="@font/berlin_sans_fb"
+        android:textColor="#CACACA"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/baseline_add_location_24"
+        android:drawablePadding="5dp"
+        android:drawableTint="#CACACA"
+        android:fontFamily="@font/berlin_sans_fb"
+        android:textColor="#CACACA"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/blood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/baseline_bloodtype_24"
+        android:drawablePadding="5dp"
+        android:drawableTint="#CACACA"
+        android:fontFamily="@font/berlin_sans_fb"
+        android:textColor="#CACACA"
+        android:textSize="22dp" />
+</LinearLayout>

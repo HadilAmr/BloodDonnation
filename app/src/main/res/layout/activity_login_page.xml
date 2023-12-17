@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c2c2c"
+    tools:context=".SignUpPage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="304dp"
+        android:layout_height="467dp"
+        android:layout_marginStart="260dp"
+        android:translationZ="-6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/donnate" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="240dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="150dp"
+        android:textColorHint="#CACACA"
+        app:hintTextColor="#E72F3E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:alpha="0.5"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/berlin_sans_fb"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColor="#CACACA"
+            android:textSize="18dp"
+            android:translationZ="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pwd"
+        android:layout_width="238dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="150dp"
+        android:textColorHint="#CACACA"
+        app:hintTextColor="#E72F3E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#CACACA">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bld"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:alpha="0.5"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/berlin_sans_fb"
+            android:hint="Password"
+            android:padding="10dp"
+            android:password="true"
+            android:textColor="#CACACA"
+            android:textSize="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:translationZ="-5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bg2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/berlin_sans_fb"
+        android:text="Sign In"
+        android:textColor="#CACACA"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/modify"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/berlin_sans_fb"
+        android:text="Login"
+        android:textColor="#CACACA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="312dp"
+        android:layout_height="130dp"
+        android:fontFamily="@font/country_market"
+        android:text="Your generosity shines a light of hope. Thank you for making a meaningful impact through your kind donation."
+        android:textAlignment="center"
+        android:textColor="#CACACA"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modify"
+        app:layout_constraintVertical_bias="0.596" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/berlin_sans_fb"
+        android:text="Not a donor yet ?"
+        android:textColor="#AE1C52"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modify" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="160dp"
+        android:fontFamily="@font/berlin_sans_fb"
+        android:text="Register"
+        android:textColor="#B87E95"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modify" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

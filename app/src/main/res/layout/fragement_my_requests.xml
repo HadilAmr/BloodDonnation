@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/AppTheme"
+    android:background="@drawable/recyclerview_bg"
+    android:padding="15dp">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keep hope ! Someone will help you out !"
+                android:fontFamily="@font/country_market"
+                android:textColor="#B87E95"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/new_request"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_bg"
+                android:fontFamily="@font/berlin_sans_fb"
+                android:hint="Write your request here..."
+                android:padding="10dp"
+                android:textColorHint="#7b2545" />
+
+            <Button
+                android:id="@+id/add_request"
+                android:layout_width="218dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.7"
+                android:background="@drawable/request_button"
+                android:fontFamily="@font/berlin_sans_fb"
+                android:text="Add Request"
+                android:textColor=" #E72F3E" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                tools:listitem="@layout/request_item_layout"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@drawable/recyclerview_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c2c2c">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="58dp"
+        android:fontFamily="@font/berlin_sans_fb"
+        android:text="Your Information"
+        android:textColor="#CACACA"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rondom"
+        android:layout_width="238dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="100dp"
+        android:textColorHint="#CACACA"
+        app:hintTextColor="#E72F3E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:alpha="0.5"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/berlin_sans_fb"
+            android:hint="Password"
+            android:padding="10dp"
+            android:textColor="#CACACA"
+            android:textSize="18dp"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="240dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="100dp"
+        android:textColorHint="#CACACA"
+        app:hintTextColor="#E72F3E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:alpha="0.5"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/berlin_sans_fb"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColor="#CACACA"
+            android:textSize="18dp"
+            android:translationZ="20dp"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cityy"
+        android:layout_width="237dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="100dp"
+        android:textColorHint="#CACACA"
+        app:hintTextColor="#E72F3E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:alpha="0.5"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/berlin_sans_fb"
+            android:hint="City"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#CACACA"
+            android:textSize="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone"
+        android:layout_width="242dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="100dp"
+        android:textColorHint="#CACACA"
+        app:hintTextColor="#E72F3E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:alpha="0.5"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/berlin_sans_fb"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="#CACACA"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pwd"
+        android:layout_width="238dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="100dp"
+        android:textColorHint="#CACACA"
+        app:hintTextColor="#E72F3E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bld"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:alpha="0.5"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/berlin_sans_fb"
+            android:hint="Blood group"
+            android:padding="10dp"
+            android:textColor="#CACACA"
+            android:textSize="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/bg"
+        android:alpha="0.5"
+        android:translationZ="-1dp"/>
+
+    <Button
+        android:id="@+id/modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="543dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/berlin_sans_fb"
+        android:text="Modify"
+        android:textColor="#CACACA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="86dp"
+        android:layout_height="94dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="303dp"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/donners" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="276dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="530dp"
+        android:fontFamily="@font/country_market"
+        android:text="Your generosity is the heartbeat of our cause. Thank you for being a lifeline to those in need"
+        android:textAlignment="center"
+        android:textColor="#B87E95"
+        android:textSize="20dp" />
+</RelativeLayout>
